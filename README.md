@@ -21,25 +21,25 @@ Please let me know if this should be added or if I need to restart the server so
 
 ### Graph Upload: Fail
 
-![](upload-fail.png)
+![](non-code-files/upload-fail.png)
 
 ### Graph Upload: Success
 
-![](upload-success.png)
+![](non-code-files/upload-success.png)
 
 ### Solve Shortest Path: No Active Graph Fail
 
-![](no-graph-fail.png)
+![](non-code-files/no-graph-fail.png)
 
 ### Solve Shortest Path: Invalid Start/End Node Fail
 
-![](invalid-nodes-fail.png)
+![](non-code-files/invalid-nodes-fail.png)
 
 ### Solve Shortest Path: Success
 
-![](shortest-path-success.png)
+![](non-code-files/shortest-path-success.png)
 
 
 ### Additional Screenshot: Application running on onrender
 
-![](application-running-onrender.png)
+![](non-code-files/application-running-onrender.png)
