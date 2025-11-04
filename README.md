@@ -40,6 +40,6 @@ Please let me know if this should be added or if I need to restart the server so
 ![](shortest-path-success.png)
 
 
-### Additional Screenshots: Application running on onrender
+### Additional Screenshot: Application running on onrender
 
 ![](application-running-onrender.png)
