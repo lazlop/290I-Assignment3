@@ -7,11 +7,11 @@ Lazlo Paul
 
 ## Link to Github 
 
-My code is available at: https://github.com/lazlop/290I-Assignment3
+My code is available at: [https://github.com/lazlop/290I-Assignment3](https://github.com/lazlop/290I-Assignment3)
 
 ## Link to Deployed App on OnRender
 
-My application is deployed at: https://two90i-assignment3-3ogh.onrender.com
+My application is deployed at: [https://two90i-assignment3-3ogh.onrender.com](https://two90i-assignment3-3ogh.onrender.com)
 
 I wasn't sure if we should add a "delete_graph" endpoint for you to be able to test the "No active graph failure" 
 
