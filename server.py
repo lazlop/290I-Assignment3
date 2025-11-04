@@ -10,28 +10,6 @@ app = FastAPI()
 # global variable for active graph
 active_graph = None
 
-# need to load graph 
-def load_graph(graph_data):
-    
-    graph = Graph()
-    for edge in graph_data:
-        src_id = edge["source"]
-        tgt_id = edge["target"]
-
-        if src_id not in graph.nodes:
-            graph.add_node(Node(src_id))
-        if tgt_id not in graph.nodes:
-            graph.add_node(Node(tgt_id))
-
-    for edge in graph_data:
-        src = graph.nodes[edge["source"]]
-        tgt = graph.nodes[edge["target"]]
-        weight = edge["weight"]
-        bidirectional = edge["bidirectional"]
-        graph.add_edge(src, tgt, weight, bidirectional)
-
-    return graph
-
 @app.get("/")
 async def root():
     return {"message": "Welcome to the Shortest Path Solver!"}
@@ -47,9 +25,7 @@ async def create_upload_file(file: UploadFile):
 
     # helpful to return something on failure
     try:
-        contents = await file.read()
-        graph_data = json.loads(contents)
-        active_graph = load_graph(graph_data)
+        active_graph = create_graph_from_json(file)
         return {"Upload Success": file.filename}
     except Exception as e:
         return {"Error": f"Failed to process file: {str(e)}"}
