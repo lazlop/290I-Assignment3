@@ -87,6 +87,12 @@ async def get_shortest_path(start_node_id: str, end_node_id: str):
     except Exception as e:
         return {"Solver Error": f"{str(e)}"}
 
+# # Adding for testing onrender no active graph failure
+# @app.delete("/delete_graph_json/")
+# async def create_upload_file():
+#     global active_graph 
+#     active_graph= None 
+
 if __name__ == "__main__":
     print("Server is running at http://localhost:8080")
     uvicorn.run(app, host="0.0.0.0", port=8080)
